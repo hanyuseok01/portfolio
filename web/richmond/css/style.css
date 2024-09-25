@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+/* 공통 */
+section + section, footer {
+    padding:0 4%;
+    box-sizing: border-box;
+}
+section .cont_wrap {
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 100px);
+    padding: 100px 0 50px;
+    background: #fff;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    left: 0; top: 0; right: 0;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #dadada;
+    box-sizing: border-box;
+    z-index: 100;
+}
+header .logo {
+    position: absolute;
+    top: 30%; left: 4%;
+    width:180px; height: 50px;
+    margin-bottom: -25px; /* transform: translateY(-50%) */
+}
+header .logo a {
+    display: block;
+    width:100%; height: 100%;
+    background: url(../img/logo.png)no-repeat center / contain;
+}
+
+/* gna_wrap */
+header .gnb_wrap {
+    position: absolute;
+    top: 5%; left: 25%;
+    transform: translate(-40% 10% 0);
+    width:55%;
+    text-align: center;
+    font-size: 0;
+    
+}
+.gnb_wrap > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.gnb_wrap > ul > li {
+    position: relative;
+}
+.gnb_wrap > ul > li > a {
+    display: block;
+    position: relative;
+    padding:0 35px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 100px;
+    color: #000;
+}
+
+/* depth1 */
+.gnb_wrap > ul > ul {
+    position: absolute;
+    top: 100px; left: 0;
+    width:100%;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+.gnb_wrap > ul ul a {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 2;
+    letter-spacing: -1.3px;
+}
+.gnb_wrap > ul ul a:hover,
+.gnb_wrap > ul ul a:focus {
+    color:#8d7249;
+    text-decoration: underline;
+}
+/* util */
+header .util {
+    position: absolute;
+    top: 50%; right: 4%;
+    transform: translateY(-50%);
+}
+header .util a {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+header .util .tel_mobile i {
+    margin-right: 10px;
+}
+header .util .ico_insta {
+    width:38px;
+    height: 38px;
+    background: #000;
+    border-radius: 50%;
+}
+header .util .ico_insta i {
+    color:#fff;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.bg_gnb {
+    position: fixed;
+    left: 0; right: 0; top: 100px;
+    height: 180px;
+    /* padding: 40px; */
+    background: #fff;
+    z-index: 10;
+}
+
+/* #main_visual */
+#main_visual {
+    padding:0 4%;
+    box-sizing: border-box;
+}
+#main_visual .cont_wrap {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+}
+#main_visual .cont_wrap video {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* #main01 */
+#main01 {
+    position: relative;
+}
+#main01 .cont_wrap {
+    width: 100%;
+    height: 95vh;
+    background: url(../img/main1-bg.jpg)no-repeat bottom / cover;
+    padding-top: 0;
+}
+.main_title {
+    padding-top: 140px;
+    height: 40vh;
+    background: #fff;
+    text-align: center;
+  
+}
+.main_title .mid_text {
+    font-size: 26px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.9);
+    margin-bottom: 20px;
+}
+.main_title h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 50px;
+    line-height: 1.3;
+}
+.main_title .text {
+    font-size: 17px;
+    font-weight: 600;
+    color:rgba(0,0,0,0.6)
+}
+
+/* #main02 */
+#main02 {
+    position: relative;
+    margin-top: 200px;
+    height: 100vh;
+}
+#main02 .main_left h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color:#000;
+}
+#main02 .main_left h2 {
+    margin-top: 50px;
+    font-size:24px;
+    font-weight: 500;
+    color:#000;
+}
+#main02 .main_left .text {
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    color:rgba(0,0,0,0.6)
+}
+#main02 .main_right .img01 {
+    position: absolute;
+    top:20%; right: 42%;
+}
+#main02 .main_right .img02 {
+    position: absolute;
+    top:-10%; right: 23%;
+}
+#main02 .main_right .img03 {
+    position: absolute;
+    top:30%; right: 4%;
+
+}
+/* main03 */
+#main03 {
+    margin-top:200px;
+    padding:70px 0;
+    box-sizing: border-box;
+    background: url(../img/main3-bg.jpg)no-repeat center /cover;
+    height: 70vh;
+}
+#main03 .main_full {
+    padding-top: 300px;
+    box-sizing: border-box;
+}
+#main03 .main_full .main_top {
+   
+}
+#main03 .main_full .main_top .text_bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
